@@ -1,0 +1,5 @@
+flask
+PyPDF2
+spacy
+nltk
+python-dotenv  # (Optional for API keys)

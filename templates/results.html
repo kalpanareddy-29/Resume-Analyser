@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .card { background: #f9f9f9; padding: 15px; margin: 10px 0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Analysis Results</h1>
+    <div class="card">
+        <h3>Match Score: {{ analysis.match_score }}%</h3>
+    </div>
+    <div class="card">
+        <h3>Skills:</h3>
+        <ul>
+            {% for skill in analysis.skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="card">
+        <h3>Education:</h3>
+        <ul>
+            {% for edu in analysis.education %}
+                <li>{{ edu }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="card">
+        <h3>Experience:</h3>
+        <ul>
+            {% for exp in analysis.experience %}
+                <li>{{ exp }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <a href="/">Back</a>
+</body>
+</html>
